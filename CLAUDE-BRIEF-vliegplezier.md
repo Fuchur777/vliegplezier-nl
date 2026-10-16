@@ -55,7 +55,7 @@ Draagt een feature aan geen van de drie bij, dan wacht hij (YAGNI).
 Gekozen op 16-10-2026: route B uit [`docs/kosten-infrastructuur.md`](docs/kosten-infrastructuur.md), Laravel op een eigen Hetzner-VPS met een beheertool (Forge of Ploi). Een latere overstap naar Laravel Cloud kan zonder herbouw.
 
 
-- **Backend:** Laravel 12, PHP 8.3+, PostgreSQL met PostGIS (herkomst- en straalfilters).
+- **Backend:** Laravel 13, PHP 8.3+, PostgreSQL met PostGIS (herkomst- en straalfilters).
 - **Frontend:** Blade + Livewire + Alpine. Kaart met MapLibre GL JS (vector, goed voor ~4.000 postcode-4-vlakken).
 - **Admin:** Filament, zodat het beheer niet zelf gebouwd hoeft te worden.
 - **Geodata:** CBS/PDOK postcode-4-vlakken (vereenvoudigd) en de koppeling postcode-4 naar gemeente en provincie.

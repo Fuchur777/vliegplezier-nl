@@ -1,0 +1,15 @@
+# Lokale database (PostgreSQL met PostGIS). Start met: docker compose up -d
+services:
+  db:
+    image: postgis/postgis:16-3.4
+    environment:
+      POSTGRES_DB: vliegplezier
+      POSTGRES_USER: vliegplezier
+      POSTGRES_PASSWORD: secret
+    ports:
+      - "5432:5432"
+    volumes:
+      - db-data:/var/lib/postgresql/data
+
+volumes:
+  db-data:
