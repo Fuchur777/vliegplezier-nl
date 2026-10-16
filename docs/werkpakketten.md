@@ -34,7 +34,7 @@ Afgeleid van [`CLAUDE-BRIEF-vliegplezier.md`](../CLAUDE-BRIEF-vliegplezier.md). 
 - Optioneel veld organisatie bij de pluim, vooringevuld via de QR-code van die organisatie.
 - Regels: één pluim per persoon/locatie/sport/dag, datum tot 7 dagen terug, IP als keyed hash opslaan (bron netwerk-ID), herkomst-PC4 vastleggen.
 - "Mijn pluimen": eigen pluimen inzien en binnen 7 dagen verwijderen.
-- Printbare QR-code downloaden per locatie en per organisatie (club, school, bedrijf).
+- Printbare QR-code per locatie en per organisatie (club, school, bedrijf), voor iedereen te downloaden vanaf de publieke locatiepagina.
 - **Klaar als:** een geverifieerde gebruiker op het veld via een QR-code in twee tikken een pluim geeft.
 - *Uit de takenlijst:* "Formulier pluim toevoegen".
 
