@@ -39,7 +39,6 @@ Afgeleid van [`CLAUDE-BRIEF-vliegplezier.md`](../CLAUDE-BRIEF-vliegplezier.md). 
 - Kaart met alle vlieglocaties; klik op een locatie toont naam, luchtsporten en een knop "Geef een pluim".
 - Herkomstlaag (postcode-4-vlakken), standaard uit, aan te zetten door de bezoeker.
 - Filters: vlieglocatie, luchtsport, datumbereik en herkomst (gemeente, provincie, instelbare straal rond de locatie). Dezelfde filterlogica als de locatiepagina (WP5).
-- Postcode-4-vlakken met minder dan 5 unieke personen in de selectie worden niet getoond.
 - **Klaar als:** een bezoeker zonder account ziet waar de mensen vandaan komen die op een gekozen veld vliegen.
 - *Uit de takenlijst:* "Basis kaart weergave", "Kaart weergaves pluimen" en "Kaart filter opties", zonder straatfilter.
 

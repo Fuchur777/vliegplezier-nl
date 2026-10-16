@@ -33,7 +33,7 @@ Draagt een feature aan geen van de drie bij, dan wacht hij (YAGNI).
 | Rollen | Gebruiker en globale admin. Geen locatiebeheerders in fase 1. | projectinstructies |
 | Vlieglocaties | Alleen admins beheren ze, met een vaste lijst luchtsporten per locatie. Eenmalig gevuld uit de AIP Netherlands (velden, lierlocaties en dropzones uit ENR 5.5). Paraglidinglocaties voegt een admin met de hand toe. Geen aanmeldformulier voor bezoekers. | projectinstructies |
 | Luchtvaartdata | Alleen VFR. Bron is de AIP Netherlands (velden, frequenties, telefoonnummers; per locatie kunnen het er meer zijn). | projectinstructies |
-| Privacy op de kaart | Herkomst wordt pas getoond vanaf 5 unieke personen per postcode-4 in de gekozen selectie (k-anonimiteit). | *aanname* |
+| Privacy op de kaart | Herkomst wordt op postcode-4 getoond zonder minimumaantal; postcode-4 geldt als anoniem genoeg. | Frank, 16-10-2026 |
 | Open data | Export en API alleen met een gratis account (API-key per account). Export bevat per pluim een pseudoniem ID per gever, geen gebruikersnaam of IP. Licentie CC BY 4.0. | projectinstructies + *aanname* |
 | Taal | Nederlandse teksten via Laravel-vertaalbestanden. Code en techniek in het Engels. | projectinstructies |
 | Nieuwsbrief | Aanmelden via Laposta (API). | projectinstructies |
@@ -57,6 +57,5 @@ Sms-verificatie, native apps, social login, locatiebeheerders, aanmeldformulier 
 
 ## 6. Aannames die Frank nog moet bevestigen
 
-1. Drempel van 5 unieke personen per postcode-4 op de kaart.
-2. Export als CSV met pseudonieme ID's, licentie CC BY 4.0.
-3. PostgreSQL met PostGIS, Livewire, MapLibre en Filament.
+1. Export als CSV met pseudonieme ID's, licentie CC BY 4.0.
+2. PostgreSQL met PostGIS, Livewire, MapLibre en Filament.
