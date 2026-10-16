@@ -21,6 +21,13 @@ Draagt een feature aan geen van de drie bij, dan wacht hij (YAGNI).
 - De datum mag tot 7 dagen terug liggen. Binnen die 7 dagen kan de gever zijn pluim verwijderen; aanpassen gaat via verwijderen en opnieuw geven.
 - Bij elke pluim wordt de herkomst (postcode-4 van de gever op dat moment) vastgelegd, plus een IP-hash als fraude-indicator.
 
+### Unieke gevers
+
+- Eén persoon is één geverifieerd account. E-mailadressen worden genormaliseerd (o.a. Gmail-punten en +-aliassen) en wegwerpdomeinen worden geweigerd.
+- **Gever-ID:** elk account heeft een vast, willekeurig pseudoniem (bijv. `g-7f3a9c`), los van account-ID en e-mail.
+- **Netwerk-ID:** het IP-adres wordt alleen als keyed hash (HMAC met geheime sleutel) opgeslagen; in de export staat per pluim een pseudoniem daarvan. Dit is een signaal, geen bewijs: huishoudens en clubhuis-wifi delen één IP.
+- Admins zien clusters van accounts per netwerk-ID en kunnen pluimen afkeuren; afgekeurde pluimen tellen nergens mee.
+
 ## 3. Besluiten
 
 | Onderwerp | Besluit | Bron |
@@ -34,7 +41,7 @@ Draagt een feature aan geen van de drie bij, dan wacht hij (YAGNI).
 | Vlieglocaties | Alleen admins beheren ze, met een vaste lijst luchtsporten per locatie. Eenmalig gevuld uit de AIP Netherlands (velden, lierlocaties en dropzones uit ENR 5.5). Paraglidinglocaties voegt een admin met de hand toe. Geen aanmeldformulier voor bezoekers. | projectinstructies |
 | Luchtvaartdata | Alleen VFR. Bron is de AIP Netherlands (velden, frequenties, telefoonnummers; per locatie kunnen het er meer zijn). | projectinstructies |
 | Privacy op de kaart | Herkomst wordt op postcode-4 getoond zonder minimumaantal; postcode-4 geldt als anoniem genoeg. | Frank, 16-10-2026 |
-| Open data | Export en API alleen met een gratis account (API-key per account). Export bevat per pluim een pseudoniem ID per gever, geen gebruikersnaam of IP. Licentie CC BY 4.0. | projectinstructies + *aanname* |
+| Open data | Export en API alleen met een gratis account (API-key per account). CSV-export per pluim: datum, locatie, luchtsport, postcode-4, gever-ID, netwerk-ID. Geen gebruikersnaam of IP. Licentie CC BY 4.0. | Frank, 16-10-2026 |
 | Taal | Nederlandse teksten via Laravel-vertaalbestanden. Code en techniek in het Engels. | projectinstructies |
 | Nieuwsbrief | Aanmelden via Laposta (API). | projectinstructies |
 | Foto bij pluim | Alleen na opt-in, met EXIF-validatie en goedkeuring door een admin. Pas in fase 2. | projectinstructies, fasering *aanname* |
@@ -57,5 +64,4 @@ Sms-verificatie, native apps, social login, locatiebeheerders, aanmeldformulier 
 
 ## 6. Aannames die Frank nog moet bevestigen
 
-1. Export als CSV met pseudonieme ID's, licentie CC BY 4.0.
-2. PostgreSQL met PostGIS, Livewire, MapLibre en Filament.
+1. PostgreSQL met PostGIS, Livewire, MapLibre en Filament.

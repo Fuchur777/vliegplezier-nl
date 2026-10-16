@@ -20,7 +20,8 @@ Afgeleid van [`CLAUDE-BRIEF-vliegplezier.md`](../CLAUDE-BRIEF-vliegplezier.md). 
 
 ### WP2 Account en verificatie
 - Registreren met e-mail en wachtwoord, e-mailverificatie, wachtwoord vergeten.
-- Wegwerp-e-maildomeinen weigeren (open blocklist).
+- E-mailadressen normaliseren (Gmail-punten, +-aliassen) en wegwerpdomeinen weigeren (open blocklist).
+- Elk account krijgt een vast pseudoniem (gever-ID).
 - Profiel: postcode-4 (max. 1x per 3 maanden wijzigen), standaard vlieglocatie en standaard luchtsport.
 - Account verwijderen (AVG). Pluimen blijven dan geanonimiseerd bestaan.
 - **Klaar als:** een bezoeker een geverifieerd account kan aanmaken en beheren.
@@ -29,7 +30,7 @@ Afgeleid van [`CLAUDE-BRIEF-vliegplezier.md`](../CLAUDE-BRIEF-vliegplezier.md). 
 ### WP3 Pluim geven
 - Formulier op een losse pagina, vooringevuld met standaardlocatie, standaardsport en vandaag.
 - Voorinvullen via URL-parameters (locatie, sport), zodat kaart en QR-code ernaar kunnen linken.
-- Regels: één pluim per persoon/locatie/sport/dag, datum tot 7 dagen terug, IP-hash opslaan, herkomst-PC4 vastleggen.
+- Regels: één pluim per persoon/locatie/sport/dag, datum tot 7 dagen terug, IP als keyed hash opslaan (bron netwerk-ID), herkomst-PC4 vastleggen.
 - "Mijn pluimen": eigen pluimen inzien en binnen 7 dagen verwijderen.
 - Admin: per locatie een printbare QR-code downloaden.
 - **Klaar als:** een geverifieerde gebruiker op het veld via een QR-code in twee tikken een pluim geeft.
@@ -50,7 +51,7 @@ Afgeleid van [`CLAUDE-BRIEF-vliegplezier.md`](../CLAUDE-BRIEF-vliegplezier.md). 
 - *Nieuw ten opzichte van de takenlijst.*
 
 ### WP6 Open data en API
-- CSV-export van gefilterde pluimen: locatie, luchtsport, datum, herkomst-PC4, pseudoniem gever-ID. Geen gebruikersnaam, geen IP.
+- CSV-export van gefilterde pluimen: datum, locatie, luchtsport, herkomst-PC4, gever-ID, netwerk-ID. Geen gebruikersnaam, geen IP. Afgekeurde pluimen niet.
 - REST API (alleen-lezen) voor locaties en geaggregeerde cijfers, met een API-key per account.
 - Korte API-documentatie en licentie (CC BY 4.0).
 - **Klaar als:** een ingelogde gebruiker de data kan downloaden en via de API kan opvragen.
@@ -58,7 +59,7 @@ Afgeleid van [`CLAUDE-BRIEF-vliegplezier.md`](../CLAUDE-BRIEF-vliegplezier.md). 
 
 ### WP7 Beheer en fraudecontrole
 - Admin: alle pluimen inzien en filteren, gebruikers beheren (blokkeren).
-- Signalering: veel accounts op dezelfde IP-hash, pieken bij één locatie op één dag.
+- Signalering: clusters van accounts op hetzelfde netwerk-ID, pieken bij één locatie op één dag.
 - Pluimen en accounts als verdacht markeren of verwijderen; gemarkeerde pluimen tellen niet mee in de cijfers.
 - **Klaar als:** een admin verdachte patronen ziet en kan ingrijpen.
 - *Uit de takenlijst:* "Pluimen inzien (beheerders)", voor admins.
