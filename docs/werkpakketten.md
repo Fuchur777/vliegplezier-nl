@@ -15,6 +15,7 @@ Afgeleid van [`CLAUDE-BRIEF-vliegplezier.md`](../CLAUDE-BRIEF-vliegplezier.md). 
 - Datamodel: locatie (naam, ICAO-code indien aanwezig, coördinaten, type), luchtsporten per locatie, frequenties (0..n), telefoonnummers (0..n).
 - Locatielijst samen met Frank opstellen uit de AIP Netherlands: alle officiële VFR-velden (AD 2) plus lierlocaties en dropzones (ENR 5.5). Vastleggen als gecontroleerde seed-data in de repo.
 - Admin (Filament): locaties en luchtsporten beheren, paraglidinglocaties met de hand toevoegen.
+- Organisaties (club, school, bedrijf) per locatie, met hun luchtsporten. Beheer door admins. Op één locatie kunnen meerdere organisaties actief zijn.
 - **Klaar als:** alle Nederlandse VFR-locaties met hun luchtsporten in de database staan en een admin ze kan aanpassen.
 - *Uit de takenlijst:* "Beheer aanmaken vlieglocaties + activiteiten", maar dan alleen voor admins.
 
@@ -29,10 +30,11 @@ Afgeleid van [`CLAUDE-BRIEF-vliegplezier.md`](../CLAUDE-BRIEF-vliegplezier.md). 
 
 ### WP3 Pluim geven
 - Formulier op een losse pagina, vooringevuld met standaardlocatie, standaardsport en vandaag.
-- Voorinvullen via URL-parameters (locatie, sport), zodat kaart en QR-code ernaar kunnen linken.
+- Voorinvullen via URL-parameters (locatie, sport, organisatie), zodat kaart en QR-code ernaar kunnen linken.
+- Optioneel veld organisatie bij de pluim, vooringevuld via de QR-code van die organisatie.
 - Regels: één pluim per persoon/locatie/sport/dag, datum tot 7 dagen terug, IP als keyed hash opslaan (bron netwerk-ID), herkomst-PC4 vastleggen.
 - "Mijn pluimen": eigen pluimen inzien en binnen 7 dagen verwijderen.
-- Admin: per locatie een printbare QR-code downloaden.
+- Printbare QR-code downloaden per locatie en per organisatie (club, school, bedrijf).
 - **Klaar als:** een geverifieerde gebruiker op het veld via een QR-code in twee tikken een pluim geeft.
 - *Uit de takenlijst:* "Formulier pluim toevoegen".
 
@@ -46,7 +48,7 @@ Afgeleid van [`CLAUDE-BRIEF-vliegplezier.md`](../CLAUDE-BRIEF-vliegplezier.md). 
 ### WP5 Locatiepagina met kerncijfers
 - Publieke, deelbare pagina per vlieglocatie: aantal pluimen, aantal unieke personen, verdeling per luchtsport, per maand en per herkomstgemeente, plus een kaartje met de herkomst.
 - Bedoeld om een club een link of print te laten meenemen naar een gesprek met de gemeente.
-- Filters: luchtsport, locatie (één of meer), tijdspanne en herkomst (gemeente, provincie, instelbare straal rond de locatie). Gefilterde weergave heeft een eigen deelbare URL.
+- Filters: luchtsport, locatie (één of meer), organisatie, tijdspanne en herkomst (gemeente, provincie, instelbare straal rond de locatie). Gefilterde weergave heeft een eigen deelbare URL.
 - **Klaar als:** een club voor zijn veld een pagina kan delen met cijfers over een gekozen periode.
 - *Nieuw ten opzichte van de takenlijst.*
 

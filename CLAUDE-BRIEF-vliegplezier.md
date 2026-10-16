@@ -47,6 +47,7 @@ Draagt een feature aan geen van de drie bij, dan wacht hij (YAGNI).
 | Foto bij pluim | Alleen na opt-in, met EXIF-validatie en goedkeuring door een admin. Pas in fase 2. | projectinstructies, fasering *aanname* |
 | Actieve locaties | Fase 2, als bijvangst. Bronnen: primair OGN/GlideNet, aangevuld met ADS-B (Flightradar24 of vergelijkbaar). | Frank, 16-10-2026 |
 | Locatiepagina | Fase 1: publieke pagina per locatie met kerncijfers, filterbaar op luchtsport, locatie, tijdspanne en herkomst (gemeente, provincie, instelbare straal). Kaart gebruikt dezelfde filters. | Frank, 16-10-2026 |
+| Organisaties | Per locatie kunnen meerdere organisaties (club, school, bedrijf) actief zijn. Een pluim kan optioneel een organisatie hebben; QR-codes bestaan per locatie en per organisatie. Admins beheren organisaties. | Frank, 16-10-2026 |
 | Hosting | Hetzner VPS. Frank voert het provisioning-script zelf uit. | projectinstructies |
 
 ## 4. Techniek
