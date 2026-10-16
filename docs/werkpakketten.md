@@ -13,7 +13,7 @@ Afgeleid van [`CLAUDE-BRIEF-vliegplezier.md`](../CLAUDE-BRIEF-vliegplezier.md). 
 
 ### WP1 Vlieglocaties en luchtsporten
 - Datamodel: locatie (naam, ICAO-code indien aanwezig, coördinaten, type), luchtsporten per locatie, frequenties (0..n), telefoonnummers (0..n).
-- Eenmalige import uit de AIP Netherlands: VFR-velden (AD 2), lierlocaties en dropzones (ENR 5.5). Script plus gecontroleerde seed-data in de repo.
+- Locatielijst samen met Frank opstellen uit de AIP Netherlands: alle officiële VFR-velden (AD 2) plus lierlocaties en dropzones (ENR 5.5). Vastleggen als gecontroleerde seed-data in de repo.
 - Admin (Filament): locaties en luchtsporten beheren, paraglidinglocaties met de hand toevoegen.
 - **Klaar als:** alle Nederlandse VFR-locaties met hun luchtsporten in de database staan en een admin ze kan aanpassen.
 - *Uit de takenlijst:* "Beheer aanmaken vlieglocaties + activiteiten", maar dan alleen voor admins.
