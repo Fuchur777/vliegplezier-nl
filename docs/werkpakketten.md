@@ -72,8 +72,8 @@ Afgeleid van [`CLAUDE-BRIEF-vliegplezier.md`](../CLAUDE-BRIEF-vliegplezier.md). 
 
 ## Fase 2: na de lancering, op volgorde van waarde voor het doel
 
-- **WP9 Actieve locaties (OGN):** live kaart en historie van actieve velden, lierstartdetectie, jumpplane- en dropdetectie, frequenties en telefoonnummers per actieve locatie. Objectieve activiteit naast de pluimen.
-- **WP10 Actieve locaties (ADS-B):** aanvullende bron voor motorvliegtuigen en jumpplanes.
+- **WP9 Actieve locaties (OGN/GlideNet, primaire bron):** live kaart en historie van actieve velden, lierstartdetectie, jumpplane- en dropdetectie, frequenties en telefoonnummers per actieve locatie. Objectieve activiteit naast de pluimen.
+- **WP10 Actieve locaties (ADS-B, Flightradar24 of vergelijkbaar):** aanvullende bron voor motorvliegtuigen en jumpplanes.
 - **WP11 Sms-verificatie:** zodra het project status en financiering heeft. Telefoonnummer alleen als HMAC-hash, uniek per account.
 - **WP12 Foto bij pluim:** opt-in, EXIF-validatie, goedkeuring door een admin.
 - Daarna, alleen als er vraag naar is: locatiebeheerders, aanmeldformulier voor nieuwe locaties, straalfilter, XLSX-export, social login, native apps.

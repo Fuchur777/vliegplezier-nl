@@ -38,6 +38,7 @@ Draagt een feature aan geen van de drie bij, dan wacht hij (YAGNI).
 | Taal | Nederlandse teksten via Laravel-vertaalbestanden. Code en techniek in het Engels. | projectinstructies |
 | Nieuwsbrief | Aanmelden via Laposta (API). | projectinstructies |
 | Foto bij pluim | Alleen na opt-in, met EXIF-validatie en goedkeuring door een admin. Pas in fase 2. | projectinstructies, fasering *aanname* |
+| Actieve locaties | Fase 2, als bijvangst. Bronnen: primair OGN/GlideNet, aangevuld met ADS-B (Flightradar24 of vergelijkbaar). | Frank, 16-10-2026 |
 | Hosting | Hetzner VPS. Frank voert het provisioning-script zelf uit. | projectinstructies |
 
 ## 4. Techniek (voorstel)
@@ -55,8 +56,7 @@ Sms-verificatie, native apps, social login, locatiebeheerders, aanmeldformulier 
 
 ## 6. Aannames die Frank nog moet bevestigen
 
-1. "Actieve locaties" (OGN/ADS-B) pas na de lancering van de pluim-kern.
-2. Een publieke locatiepagina met kerncijfers als het product voor beslissers.
-3. Drempel van 5 unieke personen per postcode-4 op de kaart.
-4. Export als CSV met pseudonieme ID's, licentie CC BY 4.0.
-5. PostgreSQL met PostGIS, Livewire, MapLibre en Filament.
+1. Een publieke locatiepagina met kerncijfers als het product voor beslissers.
+2. Drempel van 5 unieke personen per postcode-4 op de kaart.
+3. Export als CSV met pseudonieme ID's, licentie CC BY 4.0.
+4. PostgreSQL met PostGIS, Livewire, MapLibre en Filament.
