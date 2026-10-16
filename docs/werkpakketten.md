@@ -7,6 +7,7 @@ Afgeleid van [`CLAUDE-BRIEF-vliegplezier.md`](../CLAUDE-BRIEF-vliegplezier.md). 
 ### WP0 Fundament
 - Laravel-project, Git-inrichting, lokale omgeving (Sail/Docker), CI met Pint en Pest.
 - Basislayout (header, footer, mobiel menu) en Nederlandse vertaalbestanden.
+- Transactionele mail via Brevo (SMTP/API) ingericht.
 - Keuze Forge of Ploi; Frank richt de Hetzner-VPS en de beheertool in, Claude levert de deploy-configuratie. Cloudflare ervoor.
 - **Klaar als:** een lege pagina op een testdomein draait via CI-gecontroleerde code.
 - *Uit de takenlijst:* "Opzetten omgeving" en het deel "algemene opzet thema".
@@ -68,8 +69,8 @@ Afgeleid van [`CLAUDE-BRIEF-vliegplezier.md`](../CLAUDE-BRIEF-vliegplezier.md). 
 
 ### WP8 Lancering
 - Privacyverklaring en gebruiksvoorwaarden, contactpagina.
-- Nieuwsbriefaanmelding via Laposta.
-- Verwerkersovereenkomsten (Laposta), back-ups, monitoring.
+- Nieuwsbriefaanmelding via Brevo.
+- Verwerkersovereenkomst (Brevo), back-ups, monitoring.
 - Productie-deploy op vliegplezier.nl.
 - **Klaar als:** vliegplezier.nl live is en clubs uitgenodigd kunnen worden.
 

@@ -43,7 +43,7 @@ Draagt een feature aan geen van de drie bij, dan wacht hij (YAGNI).
 | Privacy op de kaart | Herkomst wordt op postcode-4 getoond zonder minimumaantal; postcode-4 geldt als anoniem genoeg. | Frank, 16-10-2026 |
 | Open data | Export en API alleen met een gratis account (API-key per account). CSV-export per pluim: datum, locatie, luchtsport, postcode-4, gever-ID, netwerk-ID. Geen gebruikersnaam of IP. Licentie CC BY 4.0. | Frank, 16-10-2026 |
 | Taal | Nederlandse teksten via Laravel-vertaalbestanden. Code en techniek in het Engels. | projectinstructies |
-| Nieuwsbrief | Aanmelden via Laposta (API). | projectinstructies |
+| E-mail en nieuwsbrief | Brevo als enige leverancier, voor transactionele mail (verificatie, wachtwoord) én de nieuwsbrief. Vervangt Laposta. | Frank, 16-10-2026 |
 | Foto bij pluim | Alleen na opt-in, met EXIF-validatie en goedkeuring door een admin. Pas in fase 2. | projectinstructies, fasering *aanname* |
 | Actieve locaties | Fase 2, als bijvangst. Bronnen: primair OGN/GlideNet, aangevuld met ADS-B (Flightradar24 of vergelijkbaar). | Frank, 16-10-2026 |
 | Locatiepagina | Fase 1: publieke pagina per locatie met kerncijfers, filterbaar op luchtsport, locatie, tijdspanne en herkomst (gemeente, provincie, instelbare straal). Kaart gebruikt dezelfde filters. | Frank, 16-10-2026 |

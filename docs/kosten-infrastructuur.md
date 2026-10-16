@@ -21,7 +21,7 @@ Stand 16-10-2026. Bedragen per maand, excl. btw. Prijzen met een * zijn niet act
 | Lock-in | geen | laag (server blijft van jou) | middel | hoog (auth, database-API) |
 | Data in EU | ja (Duitsland/Finland) | ja | EU-regio kiesbaar, Amerikaanse aanbieder | EU-regio kiesbaar, Amerikaanse aanbieders |
 
-Vaste posten die bij alle opties gelijk zijn: domein vliegplezier.nl, Laposta, transactionele e-mail (verificatie- en wachtwoordmails; gratis tier van bijv. Brevo is genoeg voor de start, daarna ~€ 15*), Cloudflare (gratis).
+Vaste posten die bij alle opties gelijk zijn: domein vliegplezier.nl, Brevo voor transactionele mail en nieuwsbrief (gratis tier is genoeg voor de start, daarna ~€ 15*), Cloudflare (gratis).
 
 ## Totale kosten inclusief eigen tijd
 
