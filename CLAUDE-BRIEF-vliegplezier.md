@@ -49,19 +49,23 @@ Draagt een feature aan geen van de drie bij, dan wacht hij (YAGNI).
 | Locatiepagina | Fase 1: publieke pagina per locatie met kerncijfers, filterbaar op luchtsport, locatie, tijdspanne en herkomst (gemeente, provincie, instelbare straal). Kaart gebruikt dezelfde filters. | Frank, 16-10-2026 |
 | Hosting | Hetzner VPS. Frank voert het provisioning-script zelf uit. | projectinstructies |
 
-## 4. Techniek (voorstel)
+## 4. Techniek
 
-- **Backend:** Laravel 12, PHP 8.3+, MySQL 8 of PostgreSQL (keuze in WP0; PostGIS maakt de herkomstkaart eenvoudiger, dus voorkeur PostgreSQL).
+Gekozen op 16-10-2026: route B uit [`docs/kosten-infrastructuur.md`](docs/kosten-infrastructuur.md), Laravel op een eigen Hetzner-VPS met een beheertool (Forge of Ploi). Een latere overstap naar Laravel Cloud kan zonder herbouw.
+
+
+- **Backend:** Laravel 12, PHP 8.3+, PostgreSQL met PostGIS (herkomst- en straalfilters).
 - **Frontend:** Blade + Livewire + Alpine. Kaart met MapLibre GL JS (vector, goed voor ~4.000 postcode-4-vlakken).
 - **Admin:** Filament, zodat het beheer niet zelf gebouwd hoeft te worden.
 - **Geodata:** CBS/PDOK postcode-4-vlakken (vereenvoudigd) en de koppeling postcode-4 naar gemeente en provincie.
 - **Tests en kwaliteit:** Pest, Laravel Pint, GitHub Actions.
-- **Deploy:** script dat de app op de door Frank geprovisionde VPS uitrolt (geen provisioning door Claude).
+- **Hosting en deploy:** Hetzner-VPS (Duitsland/Finland), beheerd via Forge of Ploi (keuze in WP0). Cloudflare als cache/CDN. Frank richt de server en de beheertool in; Claude levert de deploy-configuratie.
+- **Fase 2:** het OGN-proces draait als apart, langlopend proces op dezelfde VPS.
 
 ## 5. Buiten scope van fase 1
 
 Sms-verificatie, native apps, social login, locatiebeheerders, aanmeldformulier voor nieuwe vlieglocaties, foto's bij pluimen, XLSX-export (CSV opent ook in Excel), meertaligheid en de pagina "Actieve locaties" (OGN/ADS-B). Die laatste staat als fase 2 in de werkpakketten.
 
-## 6. Aannames die Frank nog moet bevestigen
+## 6. Open punten
 
-1. PostgreSQL met PostGIS, Livewire, MapLibre en Filament.
+Geen. Nieuwe besluiten worden in §3 en §4 bijgeschreven met datum.

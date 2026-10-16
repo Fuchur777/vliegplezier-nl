@@ -7,7 +7,7 @@ Afgeleid van [`CLAUDE-BRIEF-vliegplezier.md`](../CLAUDE-BRIEF-vliegplezier.md). 
 ### WP0 Fundament
 - Laravel-project, Git-inrichting, lokale omgeving (Sail/Docker), CI met Pint en Pest.
 - Basislayout (header, footer, mobiel menu) en Nederlandse vertaalbestanden.
-- Deploy-script naar de Hetzner VPS, uit te voeren nadat Frank de server heeft geprovisiond.
+- Keuze Forge of Ploi; Frank richt de Hetzner-VPS en de beheertool in, Claude levert de deploy-configuratie. Cloudflare ervoor.
 - **Klaar als:** een lege pagina op een testdomein draait via CI-gecontroleerde code.
 - *Uit de takenlijst:* "Opzetten omgeving" en het deel "algemene opzet thema".
 
