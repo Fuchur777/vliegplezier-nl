@@ -39,7 +39,7 @@ Draagt een feature aan geen van de drie bij, dan wacht hij (YAGNI).
 | Nieuwsbrief | Aanmelden via Laposta (API). | projectinstructies |
 | Foto bij pluim | Alleen na opt-in, met EXIF-validatie en goedkeuring door een admin. Pas in fase 2. | projectinstructies, fasering *aanname* |
 | Actieve locaties | Fase 2, als bijvangst. Bronnen: primair OGN/GlideNet, aangevuld met ADS-B (Flightradar24 of vergelijkbaar). | Frank, 16-10-2026 |
-| Locatiepagina | Fase 1: publieke pagina per locatie met kerncijfers, filterbaar op luchtsport, locatie en tijdspanne. | Frank, 16-10-2026 |
+| Locatiepagina | Fase 1: publieke pagina per locatie met kerncijfers, filterbaar op luchtsport, locatie, tijdspanne en herkomst (gemeente, provincie, instelbare straal). Kaart gebruikt dezelfde filters. | Frank, 16-10-2026 |
 | Hosting | Hetzner VPS. Frank voert het provisioning-script zelf uit. | projectinstructies |
 
 ## 4. Techniek (voorstel)
@@ -53,7 +53,7 @@ Draagt een feature aan geen van de drie bij, dan wacht hij (YAGNI).
 
 ## 5. Buiten scope van fase 1
 
-Sms-verificatie, native apps, social login, locatiebeheerders, aanmeldformulier voor nieuwe vlieglocaties, foto's bij pluimen, straalfilter op de kaart, XLSX-export (CSV opent ook in Excel), meertaligheid en de pagina "Actieve locaties" (OGN/ADS-B). Die laatste staat als fase 2 in de werkpakketten.
+Sms-verificatie, native apps, social login, locatiebeheerders, aanmeldformulier voor nieuwe vlieglocaties, foto's bij pluimen, XLSX-export (CSV opent ook in Excel), meertaligheid en de pagina "Actieve locaties" (OGN/ADS-B). Die laatste staat als fase 2 in de werkpakketten.
 
 ## 6. Aannames die Frank nog moet bevestigen
 

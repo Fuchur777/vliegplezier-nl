@@ -38,16 +38,15 @@ Afgeleid van [`CLAUDE-BRIEF-vliegplezier.md`](../CLAUDE-BRIEF-vliegplezier.md). 
 ### WP4 Kaart
 - Kaart met alle vlieglocaties; klik op een locatie toont naam, luchtsporten en een knop "Geef een pluim".
 - Herkomstlaag (postcode-4-vlakken), standaard uit, aan te zetten door de bezoeker.
-- Filters: vlieglocatie, luchtsport, datumbereik, provincie van herkomst.
+- Filters: vlieglocatie, luchtsport, datumbereik en herkomst (gemeente, provincie, instelbare straal rond de locatie). Dezelfde filterlogica als de locatiepagina (WP5).
 - Postcode-4-vlakken met minder dan 5 unieke personen in de selectie worden niet getoond.
 - **Klaar als:** een bezoeker zonder account ziet waar de mensen vandaan komen die op een gekozen veld vliegen.
-- *Uit de takenlijst:* "Basis kaart weergave", "Kaart weergaves pluimen" en "Kaart filter opties", zonder straal- en straatfilter.
+- *Uit de takenlijst:* "Basis kaart weergave", "Kaart weergaves pluimen" en "Kaart filter opties", zonder straatfilter.
 
 ### WP5 Locatiepagina met kerncijfers
 - Publieke, deelbare pagina per vlieglocatie: aantal pluimen, aantal unieke personen, verdeling per luchtsport, per maand en per herkomstgemeente, plus een kaartje met de herkomst.
 - Bedoeld om een club een link of print te laten meenemen naar een gesprek met de gemeente.
-- Filters: luchtsport, locatie (één of meer) en tijdspanne. Gefilterde weergave heeft een eigen deelbare URL.
-- Verdere filters bepalen Frank en Claude samen.
+- Filters: luchtsport, locatie (één of meer), tijdspanne en herkomst (gemeente, provincie, instelbare straal rond de locatie). Gefilterde weergave heeft een eigen deelbare URL.
 - **Klaar als:** een club voor zijn veld een pagina kan delen met cijfers over een gekozen periode.
 - *Nieuw ten opzichte van de takenlijst.*
 
@@ -78,4 +77,4 @@ Afgeleid van [`CLAUDE-BRIEF-vliegplezier.md`](../CLAUDE-BRIEF-vliegplezier.md). 
 - **WP10 Actieve locaties (ADS-B, Flightradar24 of vergelijkbaar):** aanvullende bron voor motorvliegtuigen en jumpplanes.
 - **WP11 Sms-verificatie:** zodra het project status en financiering heeft. Telefoonnummer alleen als HMAC-hash, uniek per account.
 - **WP12 Foto bij pluim:** opt-in, EXIF-validatie, goedkeuring door een admin.
-- Daarna, alleen als er vraag naar is: locatiebeheerders, aanmeldformulier voor nieuwe locaties, straalfilter, XLSX-export, social login, native apps.
+- Daarna, alleen als er vraag naar is: locatiebeheerders, aanmeldformulier voor nieuwe locaties, XLSX-export, social login, native apps.
