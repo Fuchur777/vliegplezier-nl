@@ -46,6 +46,8 @@ Afgeleid van [`CLAUDE-BRIEF-vliegplezier.md`](../CLAUDE-BRIEF-vliegplezier.md). 
 ### WP5 Locatiepagina met kerncijfers
 - Publieke, deelbare pagina per vlieglocatie: aantal pluimen, aantal unieke personen, verdeling per luchtsport, per maand en per herkomstgemeente, plus een kaartje met de herkomst.
 - Bedoeld om een club een link of print te laten meenemen naar een gesprek met de gemeente.
+- Filters: luchtsport, locatie (één of meer) en tijdspanne. Gefilterde weergave heeft een eigen deelbare URL.
+- Verdere filters bepalen Frank en Claude samen.
 - **Klaar als:** een club voor zijn veld een pagina kan delen met cijfers over een gekozen periode.
 - *Nieuw ten opzichte van de takenlijst.*
 
